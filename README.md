@@ -1,4 +1,4 @@
-# Simulador de declaração de Imposto de Renda
+# Simulador de Declaração de Imposto de Renda
 
 - Inicie com: `python3 programaIR.py`
 - O racional do programa está na classe Declaração, em *declaracao.py*. Os outros arquivos/classes são referentes à :
