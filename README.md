@@ -36,7 +36,7 @@ Contribuinte
 Nome: Maria 
 Nascimento: 01/01/1911 
 Endereço: Rua dos Passaros 
-CPF: ########### (dado ocultado pois a validação de dados só permite cpfs verdadeiros) 
+CPF: ########### (oculto pois a validação exige um CPF real) 
 Telefone: 11123456789 
 Ocupação Principal: Educadora Física
 
