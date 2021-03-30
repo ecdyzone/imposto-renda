@@ -9,15 +9,16 @@ from dados_bancario import Dados_bancario
 from base_dados import Base_Dados
 
 # classe intermediária que contém e manipula a declaração como um todo
+
+
 class Declaracao :
     # construtor do objeto da classe Declarao
     # carrega a declaração da base de dados, se existir, senão inicializa uma nova
     def __init__( self, nome_default ) :
-        self.modificada = False # nada para salvar no disco
-        self.base_dados = Base_Dados( nome_default ) # base de dados que contém a declaração
-        self.declaracao = self.base_dados.recupera( )  # le a base de dados no disco
-        self.imposto = -1 # o valor de self.imposto sempre sera >= 0 após o cálculo de imposto.
-                          # Portanto, o valor inicial de -1 torna possível verificar se o cálculo do imposto já foi feito, como executado no método declara
+        self.modificada = False  # nada para salvar no disco
+        self.base_dados = Base_Dados( nome_default )  # base de dados que contém a declaração
+        self.declaracao = self.base_dados.recupera( )  # lê a base de dados no disco
+        self.imposto = -1   # inicia em -1 | após cálculo de imposto, self.imposto >= 0 (ver método .declara())
         self.restituicao = False    # False = imposto a pagar / True = imposto a restituir 
         self.desconto_completo_escolhido = False  # False = calculo simplificado / True = calculo completo
       

@@ -2,7 +2,6 @@
 
 from interface import Interface
 
-# programa principal
 Interface( "nome.db" )       # inicia interface com nome default do arquivo da agenda
 
 

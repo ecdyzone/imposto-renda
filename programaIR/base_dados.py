@@ -30,11 +30,11 @@ class Base_Dados :
     # recupera uma declaração salva em um banco de dados SQL
     def recupera( self ) :
         self.pede_nome( )
-        #DECLARAÇÃO[P], COM P = 0 PARA CONTRIBUINTE, P = 1 PARA DEPENDENTES... como comentado no arquivo programaIR.py
+        #declaracao[i], com i = 0 para contribuintes, i = 1 para dependentes... (como comentado em programaIR.py)
         #self.nome aqui serve pra passar o CPF introduzido pelo usuário no início do programa pra dentro de contribuinte.cpf (Ver linha 45 em menu.py)
-        declaracao = [ [], [], [], [], [], [], self.nome ]            # lista de objetos da classe Declaração a ser recuperada
+        declaracao = [ [], [], [], [], [], [], self.nome ]  # lista de objetos da classe Declaracao a ser recuperada
         
-        try :                   # lê o arquivo apenas se ele existir
+        try :   # lê o arquivo apenas se ele existir
             nome_db = str(self.nome) + ".db"
             arquivo = open( nome_db, "r" )  # tenta abrir, se já existir
             arquivo.close( )    # fecha o arquivo para ler como base de dados
